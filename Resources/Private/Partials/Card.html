@@ -1,7 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-
 <article aria-label="{card.data.header}">
-    <div class="card" id="card-{card.data.uid}">
+    <f:if condition="{card.data.cardlink}">
+        <f:then>
+            <f:link.typolink parameter="{card.data.cardlink}" class="card-link">
+                <f:render section="CardContent" arguments="{_all}" />
+            </f:link.typolink>
+        </f:then>
+        <f:else>
+            <f:render section="CardContent" arguments="{_all}" />
+        </f:else>
+    </f:if>
+</article>
+<f:section name="CardContent">
+    <div class="card h-100" id="card-{card.data.uid}">
         <f:if condition="{card.images}">
             <div class="card-image">
                 <f:for each="{card.images}" as="image">
@@ -10,12 +21,12 @@
             </div>
         </f:if>
         <div class="card-body">
-            <h2 class="card-title">
+            <h3 class="card-title">
                 <f:format.htmlspecialchars doubleEncode="false">{card.data.header}</f:format.htmlspecialchars>
-            </h2>
+            </h3>
             <f:format.html>{card.data.bodytext}</f:format.html>
         </div>
     </div>
-</article>
+</f:section>
 
 </html>
