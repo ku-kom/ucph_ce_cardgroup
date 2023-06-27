@@ -1,6 +1,6 @@
 mod.wizards.newContentElement.wizardItems {
-  // add the content element to the tab "common"
-  common {
+  // add the content element to the tab "Image"
+  image {
     elements {
       ucph_cardgroup {
         iconIdentifier = ucph-cardgroup-icon
@@ -18,7 +18,7 @@ mod.wizards.newContentElement.wizardItems {
 
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Text"
-  image {
+  text {
     header = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_wizard_tab
     elements {
       ucph_cardgroup {

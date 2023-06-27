@@ -57,6 +57,9 @@
         <trans-unit id="ucph_cardgroup_cardimage_alt">
             <source>Optional: Keep empty for decorative images</source>
         </trans-unit>
+        <trans-unit id="ucph_cardgroup_wizard_tab">
+            <source>Text</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
