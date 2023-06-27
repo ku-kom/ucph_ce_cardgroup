@@ -1,0 +1,66 @@
+tt_content.ucph_cardgroup >
+#CType: Card group
+
+tt_content.ucph_cardgroup =< lib.contentElement
+tt_content.ucph_cardgroup {
+  templateName = CardGroup
+
+  templateRootPaths {
+        10 = EXT:ucph_cardgroup/Resources/Private/Templates/
+        20 = {$ucph_cardgroup.templates.templateRootPath}
+    }
+	partialRootPaths {
+		    10 = EXT:ucph_cardgroup/Resources/Private/Partials/
+        20 = {$ucph_cardgroup.templates.partialRootPath}
+	}
+
+    layoutRootPaths {
+        10 = EXT:ucph_cardgroup/Resources/Private/Layouts/
+        20 = {$ucph_cardgroup.templates.layoutRootPath}
+    }
+
+   dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+            table = tx_ku_swiper_item
+            pidInList.field = pid
+            where {
+                data = field:uid
+                intval = 1
+                wrap = tt_content=|
+            }
+            orderBy = sorting
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                    folders.field = file_folder
+                    sorting.field = filelink_sorting
+                    as = images
+                }
+            }
+        }
+    }
+}
+
+
+##########################
+#### OPTION TO ADD CSS ###
+##########################
+lib.ucph_cardgroup.pagecss = TEXT
+lib.ucph_cardgroup.pagecss {
+    if.isTrue = {$ucph_cardgroup.assets.extraCss}
+    value = {$ucph_cardgroup.assets.extraCss}
+    htmlSanitize = 1
+}
+
+##########################
+#### OPTION TO ADD JS ####
+##########################
+lib.ucph_cardgroup.pagejs = TEXT
+lib.ucph_cardgroup.pagejs {
+    if.isTrue = {$ucph_cardgroup.assets.extraJs}
+    value = {$ucph_cardgroup.assets.extraJs}
+    htmlSanitize = 1
+}

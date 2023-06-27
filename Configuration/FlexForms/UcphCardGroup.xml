@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>EXT:ucph_cardgroup/Resources/Private/Language/locallang.xlf:ucph_cardgroup_options</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <Alignment>
+                        <TCEforms>
+                            <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment</label>
+                            <exclude>true</exclude>
+                            <onChange>reload</onChange>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_left</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_center</numIndex>
+                                        <numIndex index="1">align-center</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="2">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_right</numIndex>
+                                        <numIndex index="1">align-right</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default></default>
+                            </config>
+                        </TCEforms>
+                    </Alignment>
+                    <Columns>
+                        <TCEforms>
+                            <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_columns</label>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">1</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">2</numIndex>
+                                        <numIndex index="1">2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">3</numIndex>
+                                        <numIndex index="1">3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">4</numIndex>
+                                        <numIndex index="1">4</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </Columns>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

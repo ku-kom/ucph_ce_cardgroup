@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_cardgroup/Resources/Private/Language/locallang.xlf" date="2023-06-14T10:27:00Z" product-name="ucph_cardgroup">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="semi_collapse_accordion_btn">
+            <source>Open or close accordion</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

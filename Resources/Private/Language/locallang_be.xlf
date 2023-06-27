@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_cardgroup/Resources/Private/Language/locallang.xlf" date="2023-06-14T10:27:00Z" product-name="ucph_cardgroup">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="ucph_cardgroup_title">
+            <source>Card group</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_desc">
+            <source>Insert a element with several content cards</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_add">
+            <source>Add card</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_card">
+            <source>Card</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_cards">
+            <source>Cards</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_options">
+            <source>Card group options</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_alignment">
+            <source>Alignment</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_alignment_left">
+            <source>Left</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_alignment_center">
+            <source>Center</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_alignment_right">
+            <source>Right</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_columns">
+            <source>Columns</source>
+        </trans-unit>
+         <trans-unit id="ucph_cardgroup_card_header">
+            <source>Card header</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_card_teaser">
+            <source>Card teaser text</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_card_link">
+            <source>Card link</source>
+        </trans-unit>
+         <trans-unit id="ucph_cardgroup_card_image">
+            <source>Select image</source>
+        </trans-unit>
+        <trans-unit id="ucph_cardgroup_cardimage_alt">
+            <source>Optional: Keep empty for decorative images</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

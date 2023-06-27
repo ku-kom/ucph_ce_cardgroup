@@ -1,0 +1,13 @@
+{
+    "name": "ucph_cardgroup",
+    "version": "1.0.0",
+    "description": "Card group",
+    "keywords": [
+        "TYPO3",
+        "Bootstrap",
+        "PHP",
+        "JavaScript"
+    ],
+    "author": "Nanna Ellegaard",
+    "license": "MIT"
+}
