@@ -5,7 +5,6 @@
     "homepage": "https://b13.com",
     "license": ["GPL-2.0-or-later"],
     "require": {
-        "b13/container": "*"
     },
     "autoload": {
         "psr-4": {
