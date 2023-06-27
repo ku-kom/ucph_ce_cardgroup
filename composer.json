@@ -1,6 +1,10 @@
 {
     "name": "university-of-copenhagen/ucph-ce-cardgroup",
     "description": "TYPO3 content element \"Card group\"",
+    "authors": [{
+        "name": "Nanna Ellegaard",
+        "role": "Developer"
+    }],
     "type": "typo3-cms-extension",
     "homepage": "https://b13.com",
     "license": ["GPL-2.0-or-later"],
