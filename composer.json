@@ -1,6 +1,6 @@
 {
-    "name": "university-of-copenhagen/ucph-cardgroup",
-    "description": "Card group",
+    "name": "university-of-copenhagen/ucph-ce-cardgroup",
+    "description": "TYPO3 content element \"Card group\"",
     "type": "typo3-cms-extension",
     "homepage": "https://b13.com",
     "license": ["GPL-2.0-or-later"],

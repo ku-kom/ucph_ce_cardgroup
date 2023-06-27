@@ -23,7 +23,7 @@ tt_content.ucph_cardgroup {
         10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         20 {
-            table = tx_ku_swiper_item
+            table = tx_ucph_cardgroup_item
             pidInList.field = pid
             where {
                 data = field:uid
@@ -31,6 +31,8 @@ tt_content.ucph_cardgroup {
                 wrap = tt_content=|
             }
             orderBy = sorting
+            as = cards
+
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
                 10 {
@@ -52,15 +54,5 @@ lib.ucph_cardgroup.pagecss = TEXT
 lib.ucph_cardgroup.pagecss {
     if.isTrue = {$ucph_cardgroup.assets.extraCss}
     value = {$ucph_cardgroup.assets.extraCss}
-    htmlSanitize = 1
-}
-
-##########################
-#### OPTION TO ADD JS ####
-##########################
-lib.ucph_cardgroup.pagejs = TEXT
-lib.ucph_cardgroup.pagejs {
-    if.isTrue = {$ucph_cardgroup.assets.extraJs}
-    value = {$ucph_cardgroup.assets.extraJs}
     htmlSanitize = 1
 }

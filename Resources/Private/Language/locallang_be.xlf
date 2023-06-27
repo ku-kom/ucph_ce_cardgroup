@@ -12,6 +12,9 @@
         <trans-unit id="ucph_cardgroup_desc">
             <source>Insert a element with several content cards</source>
         </trans-unit>
+        <trans-unit id="ucph_cardgroup_internal_title">
+            <source>Internal title - not displayed in the frontend</source>
+        </trans-unit>
         <trans-unit id="ucph_cardgroup_add">
             <source>Add card</source>
         </trans-unit>

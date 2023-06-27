@@ -14,6 +14,6 @@ call_user_func(function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
-        'UCPH Card group'
+        'UCPH TYPO3 content element "Card group"'
     );
 });

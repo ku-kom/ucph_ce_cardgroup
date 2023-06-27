@@ -15,6 +15,6 @@ CREATE TABLE tx_ucph_cardgroup_item (
     tt_content int(11) DEFAULT '0' NOT NULL,
     header varchar(255) DEFAULT '' NOT NULL,
     bodytext mediumtext,
-    slidelink varchar(255) DEFAULT '' NOT NULL,
+    cardlink varchar(255) DEFAULT '' NOT NULL,
     image int(11) DEFAULT '0' NOT NULL,
 );

@@ -40,10 +40,10 @@ return [
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header,
                 bodytext,
-                slidelink,
+                cardlink,
                 image,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-                //--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
                 --palette--;;hiddenLanguagePalette,
             '
@@ -78,7 +78,7 @@ return [
     'columns' => [
         'tt_content' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ku_swiper_item.tt_content',
+            'label' => 'Label Label Label',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -87,18 +87,6 @@ return [
                 'maxitems' => 1,
                 'default' => 0,
             ],
-        ],
-        'hidden' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
-            'config' => [
-                'type' => 'check',
-                'items' => [
-                    '1' => [
-                        '0' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0'
-                    ]
-                ]
-            ]
         ],
         'starttime' => [
             'exclude' => true,
@@ -160,7 +148,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 50,
-                'max' => 50,
+                'max' => 150,
                 'eval' => 'trim'
             ],
         ],
@@ -171,13 +159,13 @@ return [
             'config' => [
                 'type' => 'text',
                 'cols' => '50',
-                'rows' => '5',
-                'max' => 200,
+                'rows' => '4',
+                'max' => 150,
                 'softref' => 'typolink_tag,email[subst],url',
                 'enableRichtext' => true
             ],
         ],
-        'slidelink' => [
+        'cardlink' => [
             'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card_link',
             'config' => [
                 'type' => 'input',

@@ -1,26 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-
-<div class="card">
-    <h2 class="accordion-header" id="accordion-heading-{data.uid}-{card.uid}">
-    </h2>
-    <div id="card-group-{data.uid}-{card.uid}" class="" aria-labelledby="">
-        <div class="accordion-body">
-            <div class="accordion-content accordion-content-{card.mediaorient}">
-                <f:if condition="{card.image}">
-                    <div class="accordion-content-item accordion-content-media">
-                        <f:for each="{card.image}" as="image">
-                            <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" />
-                        </f:for>
-                    </div>
-                </f:if>
-                <div class="accordion-content-item accordion-content-text">
-                    <f:format.html>{card.bodytext}</f:format.html>
-                </div>
+    <f:debug>{_all}</f:debug>
+<article aria-label="{card.data.header}">
+    <div class="card" id="card-{card.data.uid}">
+        <f:if condition="{card.images}">
+            <div class="card-image">
+                <f:for each="{card.images}" as="image">
+                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" class="card-img-top" />
+                </f:for>
             </div>
+        </f:if>
+        <div class="card-body">
+            <h2 class="card-title">
+                <f:format.htmlspecialchars doubleEncode="false">{card.data.header}</f:format.htmlspecialchars>
+            </h2>
+            <f:format.html>{card.data.bodytext}</f:format.html>
         </div>
     </div>
-</div>
-
-
+</article>
 
 </html>
