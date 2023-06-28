@@ -2,7 +2,7 @@
 <f:variable name="cardColumns" value="{flexFormData.settings.columns}" />
 <f:if condition="{cards}">
     <f:then>
-        <div class="row row-cols-1 row-cols-md-{cardColumns} g-4 {data.CType}" id="cardgroup-{data.uid}">
+        <div class="row row-cols-1 row-cols-md-{cardColumns} justify-content-{flexFormData.settings.alignment} g-4 {data.CType}" id="cardgroup-{data.uid}">
             <f:for each="{cards}" as="card" iteration="iteration">
                 <f:render partial="Card" arguments="{_all}" />
             </f:for>
