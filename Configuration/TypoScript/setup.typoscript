@@ -53,6 +53,6 @@ tt_content.ucph_cardgroup {
 lib.ucph_cardgroup.pagecss = TEXT
 lib.ucph_cardgroup.pagecss {
     if.isTrue = {$ucph_cardgroup.assets.extraCss}
-    data = {$ucph_cardgroup.assets.extraCss}
+    value = {$ucph_cardgroup.assets.extraCss}
     htmlSanitize = 1
 }

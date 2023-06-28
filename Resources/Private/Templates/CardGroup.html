@@ -8,10 +8,9 @@
             </f:for>
         </div>
     </f:then>
-    
-    <f:if condition="{lib.ucph_cardgroup.pagecss !== ''}">
-        <f:asset.css identifier="ucphCardGroupCSS" href="{f:cObject(typoscriptObjectPath: 'lib.ucph_cardgroup.pagecss')}" />
-    </f:if>
+</f:if>
+<f:if condition="{lib.ucph_cardgroup.pagecss !== ''}">
+    <f:asset.css identifier="ucphCardGroupCSS" href="{f:cObject(typoscriptObjectPath: 'lib.ucph_cardgroup.pagecss')}" />
 </f:if>
 
 </html>
