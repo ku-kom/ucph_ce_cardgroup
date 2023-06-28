@@ -1,0 +1,7 @@
+// Import Bootstrap base styling for EXT:ucph_assets
+
+@import "../../../../ucph_assets/Resources/Public/Scss/bootstrap5/custom/variables";
+
+// Custom UCPH card group variables and styling
+@import "custom/variables";
+@import "custom/cardgroup";

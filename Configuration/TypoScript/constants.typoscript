@@ -1,14 +1,14 @@
 ucph_cardgroup {
     templates {
-        # cat=UCPH card group/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
+        # cat=UCPH TYPO3 card group/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
         templateRootPath = EXT:ucph_cardgroup/Resources/Private/Templates/
-        # cat=UCPH card group/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
+        # cat=UCPH TYPO3 card group/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
         partialRootPath = EXT:ucph_cardgroup/Resources/Private/Partials/
-        # cat=UCPH card group/file; type=string; label=Layout Root Path: Path to layout (with a trailing slash).
+        # cat=UCPH TYPO3 card group/file; type=string; label=Layout Root Path: Path to layout (with a trailing slash).
         layoutRootPath = EXT:ucph_cardgroup/Resources/Private/Layouts/
     }
     assets {
-        # cat=UCPH card group/Assets/; type=string; label=CSS assets: Path to stylesheet.
+        # cat=UCPH TYPO3 card group/Assets/; type=string; label=CSS assets: Path to stylesheet.
         extraCss = EXT:ucph_cardgroup/Resources/Public/Css/Dist/ucph-cardgroup.min.css
     }
 }

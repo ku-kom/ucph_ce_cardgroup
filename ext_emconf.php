@@ -2,7 +2,7 @@
 
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'UCPH card group',
+    'title' => 'UCPH TYPO3 card group',
     'description' => 'Content element "Card group"',
     'category' => 'misc',
     'state' => 'stable',
