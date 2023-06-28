@@ -60,6 +60,9 @@
         <trans-unit id="ucph_cardgroup_wizard_tab">
             <source>Text</source>
         </trans-unit>
+        <trans-unit id="ucph_cardgroup_wizard_tab_img">
+            <source>Media</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,6 +1,7 @@
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Image"
   image {
+    header = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_wizard_tab_img
     elements {
       ucph_cardgroup {
         iconIdentifier = ucph-cardgroup-icon
