@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../Scss/custom/_variables.scss","../../Scss/custom/_cardgroup.scss"],"names":[],"mappings":"AAAA,KACI,UAAA,CCCJ,WACI,aAAA","file":"ucph-cardgroup.min.css","sourcesContent":["body {\r\n    color: #000;\r\n}","// Card group custom styling\r\n\r\n.card-link {\r\n    color: inherit;\r\n}"]}
+{"version":3,"sourceRoot":"","sources":["../../Scss/custom/_cardgroup.scss"],"names":[],"mappings":"AAEA,WACI","file":"ucph-cardgroup.min.css","sourcesContent":["// Card group custom styling\r\n\r\n.card-link {\r\n    color: inherit;\r\n}"]}
