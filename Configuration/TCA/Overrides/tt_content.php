@@ -61,7 +61,46 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
                 rowDescription,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-        '
+            ',
+            'columnsOverrides' => [
+                'image' => [
+                    'config' => [
+                        'minitems' => 1,
+                        'appearance' => [
+                            'elementBrowserType' => 'file',
+                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                        ],
+                        'filter' => [
+                            0 => [
+                                'parameters' => [
+                                    'allowedFileExtensions' => 'jpg,jpeg,png,svg',
+                                ],
+                            ],
+                        ],
+                        'overrideChildTca' => [
+                            'columns' => [
+                                'uid_local' => [
+                                    'config' => [
+                                        'appearance' => [
+                                            'elementBrowserAllowed' => 'jpg,jpeg,png,svg',
+                                        ],
+                                    ],
+                                ],
+                                'alternative' => [
+                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cardimage_alt'
+                                ]
+                            ],
+                            'types' => [
+                                \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                                    'showitem' => '
+                                    alternative,description,--linebreak--,crop,
+                                    --palette--;;filePalette'
+                                ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
         ]
     );
 
