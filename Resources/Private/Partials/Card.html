@@ -16,7 +16,7 @@
         <f:if condition="{card.images}">
             <div class="card-image">
                 <f:for each="{card.images}" as="image">
-                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" class="card-img-top" />
+                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" class="card-img" />
                 </f:for>
             </div>
         </f:if>
