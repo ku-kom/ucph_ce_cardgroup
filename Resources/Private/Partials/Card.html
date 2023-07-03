@@ -24,7 +24,9 @@
             <h3 class="card-title">
                 <f:format.htmlspecialchars doubleEncode="false">{card.data.header}</f:format.htmlspecialchars>
             </h3>
-            <f:format.html>{card.data.bodytext}</f:format.html>
+            <f:format.html>
+                <f:format.crop maxCharacters="150">{card.data.bodytext}</f:format.crop>
+            </f:format.html>
         </div>
     </div>
 </f:section>

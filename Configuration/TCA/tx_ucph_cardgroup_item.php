@@ -148,7 +148,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 50,
-                'max' => 150,
+                'max' => 100,
                 'eval' => 'trim'
             ],
         ],
@@ -161,6 +161,7 @@ return [
                 'cols' => '50',
                 'rows' => '4',
                 'max' => 150,
+                'eval' => 'trim',
                 'softref' => 'typolink_tag,email[subst],url',
                 'enableRichtext' => true
             ],
