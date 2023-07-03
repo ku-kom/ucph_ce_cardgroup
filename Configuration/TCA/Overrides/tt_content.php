@@ -111,6 +111,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
             'tx_ucph_cardgroup_item' => [
                 'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cards',
                 'config' => [
+                    'minitems' => 1,
                     'type' => 'inline',
                     'foreign_table' => 'tx_ucph_cardgroup_item',
                     'foreign_field' => 'tt_content',
