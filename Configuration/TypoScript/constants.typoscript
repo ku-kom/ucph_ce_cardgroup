@@ -9,6 +9,6 @@ ucph_cardgroup {
     }
     assets {
         # cat=UCPH TYPO3 content element "Card group"/Assets/; type=string; label=CSS assets: Path to stylesheet.
-        extraCss = EXT:ucph_cardgroup/Resources/Public/Css/Dist/ucph-cardgroup.min.css
+        extraCss =
     }
 }
