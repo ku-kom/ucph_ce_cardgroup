@@ -109,6 +109,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
         $GLOBALS['TCA']['tt_content']['columns'],
         [
             'tx_ucph_cardgroup_item' => [
+                'exclude' => true,
                 'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cards',
                 'config' => [
                     'minitems' => 1,
