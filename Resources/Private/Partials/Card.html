@@ -22,7 +22,7 @@
         </f:if>
         <div class="card-body">
             <h3 class="card-title">
-                <f:format.htmlspecialchars doubleEncode="false">{card.data.header}</f:format.htmlspecialchars>
+                <f:format.htmlspecialchars>{card.data.header}</f:format.htmlspecialchars>
             </h3>
             <f:format.html>
                 <f:format.crop maxCharacters="150">{card.data.bodytext}</f:format.crop>
