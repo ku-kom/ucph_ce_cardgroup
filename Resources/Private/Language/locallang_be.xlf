@@ -24,6 +24,9 @@
         <trans-unit id="ucph_cardgroup_cards">
             <source>Cards</source>
         </trans-unit>
+        <trans-unit id="ucph_cardgroup_tt_content">
+            <source>Card Group</source>
+        </trans-unit>
         <trans-unit id="ucph_cardgroup_options">
             <source>Card group options</source>
         </trans-unit>

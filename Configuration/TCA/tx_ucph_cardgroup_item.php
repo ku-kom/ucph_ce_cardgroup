@@ -78,7 +78,7 @@ return [
     'columns' => [
         'tt_content' => [
             'exclude' => true,
-            'label' => 'Label Label Label',
+            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_tt_content',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
