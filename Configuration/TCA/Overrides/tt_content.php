@@ -46,8 +46,6 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_internal_title,
                 tx_ucph_cardgroup_item,
-            --div--;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_options,
-                pi_flexform;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_options,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -133,12 +131,5 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
                 ]
             ]
         ]
-    );
-
-    // Add flexForms for content element configuration
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-        '*',
-        'FILE:EXT:' . $extKey . '/Configuration/FlexForms/UcphCardGroup.xml',
-        $contentType
     );
 });
