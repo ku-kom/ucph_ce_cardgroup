@@ -27,18 +27,6 @@
         <trans-unit id="ucph_cardgroup_options">
             <source>Card group options</source>
         </trans-unit>
-        <trans-unit id="ucph_cardgroup_alignment">
-            <source>Alignment</source>
-        </trans-unit>
-        <trans-unit id="ucph_cardgroup_alignment_left">
-            <source>Left</source>
-        </trans-unit>
-        <trans-unit id="ucph_cardgroup_alignment_center">
-            <source>Center</source>
-        </trans-unit>
-        <trans-unit id="ucph_cardgroup_alignment_right">
-            <source>Right</source>
-        </trans-unit>
         <trans-unit id="ucph_cardgroup_columns">
             <source>Columns</source>
         </trans-unit>

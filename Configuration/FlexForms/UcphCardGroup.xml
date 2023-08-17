@@ -11,7 +11,7 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <settings.alignment>
+                    <!-- <settings.alignment>
                         <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment</label>
                         <exclude>true</exclude>
                         <config>
@@ -33,7 +33,7 @@
                             </items>
                             <default>start</default>
                         </config>
-                    </settings.alignment>
+                    </settings.alignment> -->
                     <settings.columns>
                         <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_columns</label>
                         <exclude>true</exclude>
