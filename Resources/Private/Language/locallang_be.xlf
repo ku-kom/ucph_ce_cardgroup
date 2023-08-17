@@ -28,7 +28,7 @@
             <source>Card options</source>
         </trans-unit>
         <trans-unit id="ucph_cardgroup_columns">
-            <source>Columns</source>
+            <source>Number of columns</source>
         </trans-unit>
          <trans-unit id="ucph_cardgroup_card_header">
             <source>Card header</source>
