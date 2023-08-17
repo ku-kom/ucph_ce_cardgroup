@@ -7,10 +7,10 @@
         </header>
         <body>
         <trans-unit id="ucph_cardgroup_title">
-            <source>Card group</source>
+            <source>Cards</source>
         </trans-unit>
         <trans-unit id="ucph_cardgroup_desc">
-            <source>Insert a element with several content cards</source>
+            <source>Insert a element with one or several content cards.</source>
         </trans-unit>
         <trans-unit id="ucph_cardgroup_internal_title">
             <source>Internal title - not displayed in the frontend</source>
@@ -25,7 +25,7 @@
             <source>Cards</source>
         </trans-unit>
         <trans-unit id="ucph_cardgroup_options">
-            <source>Card group options</source>
+            <source>Card options</source>
         </trans-unit>
         <trans-unit id="ucph_cardgroup_columns">
             <source>Columns</source>
