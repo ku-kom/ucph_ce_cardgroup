@@ -39,7 +39,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
 
     // Configure element type
     $GLOBALS['TCA']['tt_content']['types'][$contentType] = array_replace_recursive(
-        $GLOBALS['TCA']['tt_content']['types']['ucph_cardgroup'],
+        $GLOBALS['TCA']['tt_content']['types'][$contentType],
         [
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
