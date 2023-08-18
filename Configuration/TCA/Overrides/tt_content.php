@@ -17,7 +17,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
 
     // Add content element PageTSConfig
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        'ku_semi_collapsible_accordion',
+        $extKey,
         'Configuration/TsConfig/Page.tsconfig',
         'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_title'
     );
