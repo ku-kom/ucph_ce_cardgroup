@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_cardgroup.
+ * This file is part of the package ucph_content_cardgroup.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -15,7 +15,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card',
+        'title' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_card',
         'delete' => 'deleted',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
@@ -66,7 +66,7 @@ return [
         ],
         'visibility' => [
             'showitem' => '
-                hidden;LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cards
+                hidden;LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_cards
             '
         ],
         // hidden but needs to be included all the time, so sys_language_uid is set correctly
@@ -78,12 +78,12 @@ return [
     'columns' => [
         'tt_content' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_tt_content',
+            'label' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_tt_content',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tt_content',
-                'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.{#CType}=\'ucph_cardgroup\'',
+                'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.{#CType}=\'ucph_content_cardgroup\'',
                 'maxitems' => 1,
                 'default' => 0,
             ],
@@ -132,8 +132,8 @@ return [
                         0
                     ]
                 ],
-                'foreign_table' => 'tx_ucph_cardgroup_item',
-                'foreign_table_where' => 'AND tx_ucph_cardgroup_item.pid=###CURRENT_PID### AND tx_ucph_cardgroup_item.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_ucph_content_cardgroup_item',
+                'foreign_table_where' => 'AND tx_ucph_content_cardgroup_item.pid=###CURRENT_PID### AND tx_ucph_content_cardgroup_item.sys_language_uid IN (-1,0)',
                 'default' => 0
             ]
         ],
@@ -144,7 +144,7 @@ return [
         ],
         'header' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card_header',
+            'label' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_card_header',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -153,7 +153,7 @@ return [
             ],
         ],
         'bodytext' => [
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card_teaser',
+            'label' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_card_teaser',
             'l10n_mode' => 'prefixLangTitle',
             'l10n_cat' => 'text',
             'config' => [
@@ -167,7 +167,7 @@ return [
             ],
         ],
         'cardlink' => [
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card_link',
+            'label' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_card_link',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputLink',
@@ -178,7 +178,7 @@ return [
         ],
         'image' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_card_image',
+            'label' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_card_image',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'image',
                 [
@@ -204,7 +204,7 @@ return [
                                 ]
                             ],
                             'alternative' => [
-                                'description' => 'LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cardimage_alt'
+                                'description' => 'LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_cardimage_alt'
                             ]
                         ],
                         'types' => [

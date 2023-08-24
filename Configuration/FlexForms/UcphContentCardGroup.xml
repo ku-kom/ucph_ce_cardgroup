@@ -7,27 +7,27 @@
         <sDEF>
             <ROOT>
                 <TCEforms>
-                    <sheetTitle>EXT:ucph_cardgroup/Resources/Private/Language/locallang._bexlf:ucph_cardgroup_options</sheetTitle>
+                    <sheetTitle>EXT:ucph_content_cardgroup/Resources/Private/Language/locallang._bexlf:ucph_content_cardgroup_options</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el>
                     <!-- <settings.alignment>
-                        <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment</label>
+                        <label>LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_alignment</label>
                         <exclude>true</exclude>
                         <config>
                             <type>select</type>
                             <renderType>selectSingle</renderType>
                             <items type="array">
                                 <numIndex index="0" type="array">
-                                    <numIndex index="0">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_left</numIndex>
+                                    <numIndex index="0">LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_alignment_left</numIndex>
                                     <numIndex index="1">start</numIndex>
                                 </numIndex>
                                 <numIndex index="1" type="array">
-                                    <numIndex index="0">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_center</numIndex>
+                                    <numIndex index="0">LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_alignment_center</numIndex>
                                     <numIndex index="1">center</numIndex>
                                 </numIndex>
                                 <numIndex index="2" type="array">
-                                    <numIndex index="0">LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_alignment_right</numIndex>
+                                    <numIndex index="0">LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_alignment_right</numIndex>
                                     <numIndex index="1">end</numIndex>
                                 </numIndex>
                             </items>
@@ -35,7 +35,7 @@
                         </config>
                     </settings.alignment> -->
                     <settings.columns>
-                        <label>LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_columns</label>
+                        <label>LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_columns</label>
                         <exclude>true</exclude>
                         <config>
                             <type>select</type>

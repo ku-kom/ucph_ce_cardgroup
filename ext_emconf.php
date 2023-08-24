@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'UniversityOfCopenhagen\\UcphCardGroup\\' => 'Classes',
+            'UniversityOfCopenhagen\\UcphContentCardGroup\\' => 'Classes',
         ],
     ],
     'state' => 'stable',

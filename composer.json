@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph-ce-cardgroup",
+    "name": "university-of-copenhagen/ucph-content-cardgroup",
     "description": "TYPO3 content element \"Card group\"",
     "authors": [{
         "name": "Nanna Ellegaard",
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "UniversityOfCopenhagen\\UcphCardGroup\\": "Classes/"
+            "UniversityOfCopenhagen\\UcphContentCardGroup\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ucph_cardgroup"
+            "extension-key": "ucph_content_cardgroup"
         }
     }
 }

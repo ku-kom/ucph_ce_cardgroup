@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_cardgroup.
+ * This file is part of the package ucph_content_cardgroup.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -9,7 +9,7 @@
 
 defined('TYPO3') or die('Access denied.');
 
-call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgroup') {
+call_user_func(function ($extKey ='ucph_content_cardgroup', $contentType ='ucph_content_cardgroup') {
     // Add Content Element
     if (!is_array($GLOBALS['TCA']['tt_content']['types'][$contentType] ?? false)) {
         $GLOBALS['TCA']['tt_content']['types'][$contentType] = [];
@@ -19,7 +19,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extKey,
         'Configuration/TsConfig/Page.tsconfig',
-        'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_title'
+        'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_title'
     );
 
     // Add content element to selector list
@@ -27,7 +27,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
         'tt_content',
         'CType',
         [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_title',
+            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_title',
             $contentType,
             'ucph-cardgroup-icon',
             $extKey
@@ -44,9 +44,9 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_internal_title,
-                pi_flexform;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_options,
-                tx_ucph_cardgroup_item,
+                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_internal_title,
+                pi_flexform;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_options,
+                tx_ucph_content_cardgroup_item,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -86,7 +86,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
                                     ],
                                 ],
                                 'alternative' => [
-                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cardimage_alt'
+                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_cardimage_alt'
                                 ]
                             ],
                             'types' => [
@@ -107,16 +107,16 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
     $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
         $GLOBALS['TCA']['tt_content']['columns'],
         [
-            'tx_ucph_cardgroup_item' => [
+            'tx_ucph_content_cardgroup_item' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_cards',
+                'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_cards',
                 'config' => [
                     'minitems' => 1,
                     'type' => 'inline',
-                    'foreign_table' => 'tx_ucph_cardgroup_item',
+                    'foreign_table' => 'tx_ucph_content_cardgroup_item',
                     'foreign_field' => 'tt_content',
                     'appearance' => [
-                        'newRecordLinkTitle' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_add',
+                        'newRecordLinkTitle' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_add',
                         'useSortable' => true,
                         'showSynchronizationLink' => true,
                         'showAllLocalizationLink' => true,
@@ -137,7 +137,7 @@ call_user_func(function ($extKey ='ucph_cardgroup', $contentType ='ucph_cardgrou
     // Add flexForms for content element configuration
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
         '*',
-        'FILE:EXT:' . $extKey . '/Configuration/FlexForms/UcphCardGroup.xml',
+        'FILE:EXT:' . $extKey . '/Configuration/FlexForms/UcphContentCardGroup.xml',
         $contentType
     );
 });

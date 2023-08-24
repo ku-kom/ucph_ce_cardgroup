@@ -1,18 +1,18 @@
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Image"
   image {
-    header = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_wizard_tab_img
+    header = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_wizard_tab_img
     elements {
-      ucph_cardgroup {
+      ucph_content_cardgroup {
         iconIdentifier = ucph-cardgroup-icon
-        title = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_title
-        description = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_desc
+        title = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_title
+        description = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_desc
         tt_content_defValues {
-          CType = ucph_cardgroup
+          CType = ucph_content_cardgroup
         }
       }
     }
-    show := addToList(ucph_cardgroup)
+    show := addToList(ucph_content_cardgroup)
   }
 }
 
@@ -20,17 +20,17 @@ mod.wizards.newContentElement.wizardItems {
 mod.wizards.newContentElement.wizardItems {
   // add the content element to the tab "Text"
   text {
-    header = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_wizard_tab
+    header = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_wizard_tab
     elements {
-      ucph_cardgroup {
+      ucph_content_cardgroup {
         iconIdentifier = ucph-cardgroup-icon
-        title = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_title
-        description = LLL:EXT:ucph_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_cardgroup_desc
+        title = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_title
+        description = LLL:EXT:ucph_content_cardgroup/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_desc
         tt_content_defValues {
-          CType = ucph_cardgroup
+          CType = ucph_content_cardgroup
         }
       }
     }
-    show := addToList(ucph_cardgroup)
+    show := addToList(ucph_content_cardgroup)
   }
 }

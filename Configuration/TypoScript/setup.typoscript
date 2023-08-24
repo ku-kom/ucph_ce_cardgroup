@@ -1,29 +1,29 @@
-tt_content.ucph_cardgroup >
+tt_content.ucph_content_cardgroup >
 #CType: Card group
 
-tt_content.ucph_cardgroup =< lib.contentElement
-tt_content.ucph_cardgroup {
+tt_content.ucph_content_cardgroup =< lib.contentElement
+tt_content.ucph_content_cardgroup {
   templateName = CardGroup
 
   templateRootPaths {
-        10 = EXT:ucph_cardgroup/Resources/Private/Templates/
-        20 = {$ucph_cardgroup.templates.templateRootPath}
+        10 = EXT:ucph_content_cardgroup/Resources/Private/Templates/
+        20 = {$ucph_content_cardgroup.templates.templateRootPath}
     }
 	partialRootPaths {
-		    10 = EXT:ucph_cardgroup/Resources/Private/Partials/
-        20 = {$ucph_cardgroup.templates.partialRootPath}
+		    10 = EXT:ucph_content_cardgroup/Resources/Private/Partials/
+        20 = {$ucph_content_cardgroup.templates.partialRootPath}
 	}
 
     layoutRootPaths {
-        10 = EXT:ucph_cardgroup/Resources/Private/Layouts/
-        20 = {$ucph_cardgroup.templates.layoutRootPath}
+        10 = EXT:ucph_content_cardgroup/Resources/Private/Layouts/
+        20 = {$ucph_content_cardgroup.templates.layoutRootPath}
     }
 
    dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         20 {
-            table = tx_ucph_cardgroup_item
+            table = tx_ucph_content_cardgroup_item
             pidInList.field = pid
             where {
                 data = field:uid
@@ -50,9 +50,9 @@ tt_content.ucph_cardgroup {
 ##########################
 #### OPTION TO ADD CSS ###
 ##########################
-lib.ucph_cardgroup.pagecss = TEXT
-lib.ucph_cardgroup.pagecss {
-    if.isTrue = {$ucph_cardgroup.assets.extraCss}
-    value = {$ucph_cardgroup.assets.extraCss}
+lib.ucph_content_cardgroup.pagecss = TEXT
+lib.ucph_content_cardgroup.pagecss {
+    if.isTrue = {$ucph_content_cardgroup.assets.extraCss}
+    value = {$ucph_content_cardgroup.assets.extraCss}
     htmlSanitize = 1
 }
