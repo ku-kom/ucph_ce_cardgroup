@@ -43,8 +43,8 @@ call_user_func(function ($extKey ='ucph_content_cardgroup', $contentType ='ucph_
         [
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_internal_title,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
                 pi_flexform;LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_cardgroup_options,
                 tx_ucph_content_cardgroup_item,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
