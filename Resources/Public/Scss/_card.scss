@@ -39,6 +39,7 @@ $card-height: 22rem !default;
 
 .main-content {
     .card-img {
+        object-fit: cover;
         height: 100%;
         min-width: auto;
     }
