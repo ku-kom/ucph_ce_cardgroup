@@ -10,7 +10,7 @@ tt_content.ucph_content_cardgroup {
         20 = {$ucph_content_cardgroup.templates.templateRootPath}
     }
 	partialRootPaths {
-		    10 = EXT:ucph_content_cardgroup/Resources/Private/Partials/
+		10 = EXT:ucph_content_cardgroup/Resources/Private/Partials/
         20 = {$ucph_content_cardgroup.templates.partialRootPath}
 	}
 
@@ -19,8 +19,13 @@ tt_content.ucph_content_cardgroup {
         20 = {$ucph_content_cardgroup.templates.layoutRootPath}
     }
 
+    variables {
+        ucph_content_cardgroup_col = TEXT
+        ucph_content_cardgroup_col.data = flexform: pi_flexform:settings.columns
+    }
+
    dataProcessing {
-    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         20 {
             table = tx_ucph_content_cardgroup_item
