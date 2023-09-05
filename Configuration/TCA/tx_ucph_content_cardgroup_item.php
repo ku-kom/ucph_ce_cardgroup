@@ -160,10 +160,10 @@ return [
                 'type' => 'text',
                 'cols' => '50',
                 'rows' => '4',
-                'max' => 150,
+                'max' => 110,
                 'eval' => 'trim',
-                'softref' => 'typolink_tag,email[subst],url',
-                'enableRichtext' => true
+                // 'softref' => 'typolink_tag,email[subst],url',
+                'enableRichtext' => false
             ],
         ],
         'cardlink' => [
