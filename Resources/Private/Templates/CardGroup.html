@@ -3,7 +3,7 @@
 <f:section name="Main">
     <f:if condition="{cards}">
         <f:then>
-            <div class="row row-cols-1 row-cols-md-{ucph_content_cardgroup_col}" id="cardgroup-{data.uid}">
+            <div class="row row-cols-1 row-cols-md-{ucph_content_cardgroup_col} card-container" id="cardgroup-{data.uid}">
                 <f:for each="{cards}" as="card">
                     <f:render partial="Card" arguments="{_all}" />
                 </f:for>

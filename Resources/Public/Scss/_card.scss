@@ -46,3 +46,7 @@
         min-width: auto;
     }
 }
+
+.card-container {
+    row-gap: $grid-gutter-height;
+}
